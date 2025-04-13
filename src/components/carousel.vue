@@ -1,27 +1,34 @@
-<script setup lang="ts">
-import { Card, CardContent } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-</script>
-
 <template>
-  <Carousel
-    class="w-full max-w-lg mx-auto flex justify-center items-center mt-8"
-    :opts="{
-      align: 'center',
-    }"
-  >
-    <CarouselContent>
-      <CarouselItem v-for="(_, index) in 3" :key="index" class="md:basis-1/2 lg:basis-1/3">
-        <div class="p-1">
-          <Card>
-            <CardContent class="flex  items-center justify-center p-6">
-              <span class="text-3xl font-semibold">{{ index + 1 }}</span>
-            </CardContent>
-          </Card>
+  <section class="max-w-10/12 mx-auto my-10">
+    <h3 class="text-3xl font-bold mb-4">Trabajos recientes</h3>
+
+    <!-- Grid container with 4 columns -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="/imagenes/autopot.png" alt="Sunset in the mountains" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">AquaPot</div>
+          <p class="text-gray-700 text-base">
+            Maceta innovadora con doble fondo diseñada para un riego más eficiente. Su cámara inferior almacena agua,
+            permitiendo que la planta la absorba gradualmente según sus necesidades, simplificando el cuidado y
+            manteniendo tus plantas saludables.
+          </p>
         </div>
-      </CarouselItem>
-    </CarouselContent>
-    <CarouselPrevious />
-    <CarouselNext />
-  </Carousel>
+        <div class="px-6 pt-4 pb-2 ">
+          <Badge class="inline-block mr-2 mb-2" variant="secondary">#photography</Badge>
+          <Badge class="inline-block mr-2 mb-2" variant="secondary">#travel</Badge>
+          <Badge class="inline-block mr-2 mb-2" variant="secondary">#winter</Badge>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </section>
 </template>
+
+<script setup lang="ts">
+import { Badge } from '@/components/ui/badge'
+</script>

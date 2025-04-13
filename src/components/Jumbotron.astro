@@ -1,23 +1,41 @@
-<section class="relative my-24 pb-12 overflow-hidden">
-    <!-- Background gradient that will be visible -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z-0"></div>
-    
-    <div class="container relative z-10 mx-auto px-4 space-y-8 md:space-y-5 flex flex-col justify-center items-center w-full text-center">
-        <!-- Text -->
-        <h1 class="font-bold text-gray-800 md:block hidden">Convierte tus <span class="text-primary">Conceptos</span> en Realidad 3D</h1>
-        <h2 class="font-bold text-gray-800 md:hidden block">Convierte tus <span class="text-primary">Conceptos</span> en Realidad 3D</h2>
+---
+import { Button } from "@/components/ui/button";
+---
 
-        <h5 class="font-medium text-gray-600 max-w-2xl">
-            Lleva tus Ideas a la Tercera Dimensión con nuestros servicios profesionales
+<section class="relative mt-24 pb-12 md:py-32 overflow-hidden">
+    <!-- Background gradient that will be visible -->
+    <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z-0">
+    </div>
+
+    <div
+        class="container relative z-10 mx-auto max-w-7xl px-4 md:px-8 lg:px-12 space-y-10 md:space-y-8 flex flex-col justify-center items-center text-center"
+    >
+        <!-- Text -->
+        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl text-gray-800 md:block hidden leading-tight">
+            Convierte tus <span class="text-primary">Conceptos</span> en Realidad
+        </h1>
+        <h2 class="font-bold text-3xl text-gray-800 md:hidden block leading-tight">
+            Convierte tus <span class="text-primary">Conceptos</span> en Realidad
+            3D
+        </h2>
+
+        <h5 class="font-medium text-base md:text-xl text-gray-600 max-w-2xl mt-2 md:mt-4 leading-relaxed">
+            Lleva tus Ideas a la Tercera Dimensión con nuestros servicios
+            
         </h5>
 
         <!-- Decorative element -->
-        <div class="w-24 h-1 bg-blue-600 rounded-full my-2"></div>
+        <div class="w-24 h-1 bg-blue-600 rounded-full my-2 md:my-4"></div>
 
         <!-- Button -->
-        <div class="flex gap-4 mt-4">
-            <a href="/contacto" class="inline-block py-3 px-6 rounded-full bg-primary text-white font-medium hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">Cotizar</a>
-            <a href="/productos" class="inline-block py-3 px-6 rounded-full border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors">Ver productos</a>
+        <div class="flex gap-6 justify-center items-center mt-6 md:mt-8">
+            <Button class="p-5 px-8 md:px-10">
+                <h5>Cotizar</h5>
+            </Button>
+
+            <Button variant="outline" class="p-5 px-8 md:px-10">
+                <h5>Ver Productos</h5>
+            </Button>
         </div>
     </div>
 </section>

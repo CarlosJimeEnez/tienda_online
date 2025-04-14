@@ -178,35 +178,81 @@
     font-size: 100%;
   }
 
-  /* 16px */
+  /* Perfect Fourth Scale (1.333) */
+  /* Base: 16px */
 
+  /* Tailwind text-xs */
+  .text-xs {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  /* Tailwind text-sm */
+  .text-sm {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  /* Tailwind text-base */
+  .text-base {
+    font-size: 1rem; /* 16px - Base */
+  }
+
+  /* Tailwind text-lg */
+  .text-lg {
+    font-size: 1.333rem; /* 21.33px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-xl */
+  .text-xl {
+    font-size: 1.777rem; /* 28.43px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-2xl */
+  .text-2xl {
+    font-size: 2.369rem; /* 37.9px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-3xl */
+  .text-3xl {
+    font-size: 3.158rem; /* 50.53px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-4xl */
+  .text-4xl {
+    font-size: 4.210rem; /* 67.36px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-5xl */
+  .text-5xl {
+    font-size: 5.61rem; /* 89.76px - Perfect Fourth step */
+  }
+
+  /* Tailwind text-6xl */
+  .text-6xl {
+    font-size: 7.478rem; /* 119.65px - Perfect Fourth step */
+  }
+
+  /* Heading elements with Perfect Fourth scale */
   h1 {
-    font-size: 4.210rem;
-    /* 67.36px */
+    font-size: 4.210rem; /* 67.36px */
   }
 
   h2 {
-    font-size: 3.158rem;
-    /* 50.56px */
+    font-size: 3.158rem; /* 50.53px */
   }
 
   h3 {
-    font-size: 2.369rem;
-    /* 37.92px */
+    font-size: 2.369rem; /* 37.9px */
   }
 
   h4 {
-    font-size: 1.777rem;
-    /* 28.48px */
+    font-size: 1.777rem; /* 28.43px */
   }
 
   h5 {
-    font-size: 1.333rem;
-    /* 21.28px */
+    font-size: 1.333rem; /* 21.33px */
   }
 
   small {
-    font-size: 0.750rem;
-    /* 12px */
+    font-size: 0.75rem; /* 12px */
   }
 }

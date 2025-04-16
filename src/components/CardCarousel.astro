@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+---
+<!-- Card 1 -->
+<div class="rounded overflow-hidden border border-accent/10 hover:scale-102 transition-transform hover:bg-accent/10">
+    <Image
+      src="/imagenes/autopot.png"
+      alt="AquaPot - Maceta innovadora"
+      width={400}
+      height={300}
+      loading="lazy"
+      class="w-full"
+    />
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">
+        <h5 >AquaPot</h5>
+      </div>
+      <p class="text-gray-700 text-base">
+        Maceta innovadora con doble fondo diseñada para un riego más
+        eficiente.</p>
+    </div>
+    <!-- <div class="px-6 pt-4 pb-2">
+      <Badge class="inline-block mr-2 mb-2" variant="secondary"
+        >#photography</Badge
+      >
+      <Badge class="inline-block mr-2 mb-2" variant="secondary">#travel</Badge
+      >
+      <Badge class="inline-block mr-2 mb-2" variant="secondary">#winter</Badge
+      >
+    </div> -->
+  </div>
+</div>

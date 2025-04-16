@@ -1,39 +1,70 @@
 ---
 import { Button } from "@/components/ui/button";
+import ThreeModel from "./ThreeModel.vue";
 ---
 
-<section class="relative mt-24 pb-12 py-1 overflow-hidden flex flex-row sm:h-[70vh]">
+<section
+    class="relative mt-24 pb-12 py-1 overflow-hidden sm:h-[70vh] mx-auto px-4 sm:px-8 md:px-12 lg:px-16"
+>
     <!-- Background gradient that will be visible -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z">
     </div>
 
     <div
-        class="container w-full sm:w-11/12 md:w-10/12 xl:w-8/12 z-10 mx-auto max-w-7xl px-4 sm:pl-8 md:pl-12 lg:pl-16 flex flex-col justify-center items-center sm:items-start text-center sm:text-start"
+        class="container mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-4"
     >
-        <!-- Text -->
-        <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl text-gray-800 leading-tight">
-            Convierte tus <span class="text-primary">Conceptos</span> en Realidad
-        </h1>
+        <div
+            class="w-full sm:w-7/12 md:w-7/12 xl:w-6/12 z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-start"
+        >
+            <!-- Text -->
+            <h1
+                class="font-bold text-3xl md:text-5xl lg:text-6xl text-gray-800 leading-tight"
+            >
+                Convierte tus <span class="text-primary">Conceptos</span> en Realidad
+            </h1>
 
-        <p class="font-medium text-lg md:text-xl text-gray-600 max-w-2xl mt-3 md:mt-4 leading-relaxed">
-            Explore nuestros modelos 3D o cargue los suyos propios. Imprimiremos y enviaremos tus creaciones personalizadas con precisión y cuidado.
-        </p>
+            <p
+                class="font-medium text-lg md:text-xl text-gray-600 max-w-2xl mt-3 md:mt-4 leading-relaxed"
+            >
+                Explore nuestros modelos 3D o cargue los suyos propios.
+                Imprimiremos y enviaremos tus creaciones personalizadas con
+                precisión y cuidado.
+            </p>
 
-        <!-- Decorative element -->
-        <div class="mx-auto sm:mx-0 w-28 h-1  bg-primary rounded-full my-4 md:my-6"></div>
+            <!-- Decorative element -->
+            <div
+                class="mx-auto sm:mx-0 w-28 h-1 bg-primary rounded-full my-4 md:my-6"
+            >
+            </div>
 
-        <!-- Button -->
-        <div class="flex flex-col  w-full sm:flex-row  gap-4 md:gap-6  md:w-3/12">
-            <Button variant="outline" class="w-full px-6 md:p-5 md:px-8 xl:px-12  xl:py-5">
-                <h1 class="text-sm  md:text-base lg:text-xl">Ver Productos</h1>
-            </Button>
+            <!-- Button -->
+            <div
+                class="flex flex-col w-full sm:flex-row gap-4 md:gap-6 md:w-3/12"
+            >
+                <Button
+                    variant="outline"
+                    class="w-full px-6 md:p-5 md:px-8 xl:px-12 xl:py-5"
+                >
+                    <h1 class="text-sm md:text-base lg:text-xl">
+                        Ver Productos
+                    </h1>
+                </Button>
 
-            <Button variant="default" class="w-full px-6 md:p-5 md:px-8 xl:px-12  xl:py-5">
-                <h1 class="text-sm md:text-base lg:text-xl ">Cotizar</h1>
-            </Button>
+                <Button
+                    variant="default"
+                    class="w-full px-6 md:p-5 md:px-8 xl:px-12 xl:py-5"
+                >
+                    <h1 class="text-sm md:text-base lg:text-xl">Cotizar</h1>
+                </Button>
+            </div>
+        </div>
+
+        <div
+            class="w-full sm:w-5/12 md:w-5/12 lg:w-5/12 p-4 flex items-center justify-center border rounded-lg shadow-sm sm:h-[400px]"
+        >
+            <div class="w-full h-full rounded-lg overflow-hidden">
+                <ThreeModel client:idle />
+            </div>
         </div>
     </div>
-    <div class="hidden sm:block w-1/4">
-        
-    </div>  
 </section>

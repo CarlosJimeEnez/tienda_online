@@ -3,15 +3,13 @@ import { Button } from "@/components/ui/button";
 import ThreeModel from "./ThreeModel.vue";
 ---
 
-<section
-    class="relative mt-24 pb-12 py-1 overflow-hidden sm:h-auto mx-auto px-4 sm:px-8 md:px-12 lg:px-16"
->
+<section class="relative mt-24 pb-12 py-1 overflow-hidden sm:h-auto border-b">
     <!-- Background gradient that will be visible -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z">
-    </div>
+    <!-- <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-200 z">
+    </div> -->
 
     <div
-        class="container mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-4"
+        class="container mx-auto max-w-7xl px-4 sm:px-8 md:px-12 lg:px-16 flex flex-col sm:flex-row justify-between items-center gap-4"
     >
         <div
             class="w-full sm:w-7/12 md:w-7/12 xl:w-6/12 z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-start"
@@ -46,7 +44,7 @@ import ThreeModel from "./ThreeModel.vue";
                     class="w-full py-3 px-8 md:py-4 md:px-10 xl:py-5 xl:px-12"
                 >
                     <h5 class="text-sm md:text-base lg:text-xl font-medium">
-                        Ver Producto
+                        Ver Productos
                     </h5>
                 </Button>
                 <Button
@@ -59,7 +57,7 @@ import ThreeModel from "./ThreeModel.vue";
         </div>
 
         <div
-            class="w-full sm:w-5/12 md:w-5/12 lg:w-5/12 p-4 flex items-center justify-center border rounded-lg shadow-sm sm:h-[400px]"
+            class="w-full sm:w-5/12 md:w-5/12 lg:w-5/12 p-4 flex items-center justify-center rounded-lg  sm:h-[400px]"
         >
             <div class="w-full h-full rounded-lg overflow-hidden">
                 <ThreeModel client:idle />

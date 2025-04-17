@@ -19,7 +19,7 @@ onMounted(() => {
   scene = new THREE.Scene();
   
   // Usar un fondo blanco sólido para mejor rendimiento
-  scene.background = new THREE.Color(0xcccccc);
+  scene.background = new THREE.Color(0xffffff);
 
   // Configurar cámara
   camera = new THREE.PerspectiveCamera(
